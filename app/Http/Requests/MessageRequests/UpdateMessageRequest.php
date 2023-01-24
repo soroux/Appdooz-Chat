@@ -34,6 +34,8 @@ class UpdateMessageRequest extends FormRequest
             'reply_id'=>'nullable|integer|exists:App\Models\Message,id',
             'type_id'=>'nullable|integer|exists:App\Models\Type,id',
             'channel_type_id'=>'nullable|integer|exists:App\Models\ChannelType,id',
+            'seen'=>'nullable|boolean',
+            'delivered'=>'nullable|boolean',
         ];
     }
 }
